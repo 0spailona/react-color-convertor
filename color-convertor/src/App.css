@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrp {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+input, span {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: azure;
+    color: #282839;
+    border: none;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+.showResult {
+    background-color: rgba(26, 26, 26, 0.5);
+    color: ghostwhite;
+}
