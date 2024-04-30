@@ -10,6 +10,11 @@ class App extends Component {
     }
 
     convert(hex: string) {
+
+        if (!/^#([0-9a-fA-F]){6}/.test(hex)) {
+            return null
+        }
+
         const r = parseInt(hex.substring(1, 3), 16)
         const g = parseInt(hex.substring(3, 5), 16)
         const b = parseInt(hex.substring(5, 7), 16)
